@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: RGB(58, 124, 165);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loginpage.loginmate.SignUpController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="148.0" style="-fx-background-color: RGB(0, 128, 128);">
+         <children>
+            <Label layoutX="13.0" layoutY="67.0" prefHeight="39.0" prefWidth="123.0" text="RECBER" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="33.0" />
+               </font>
+               <effect>
+                  <Glow level="0.42" />
+               </effect>
+            </Label>
+            <Label layoutX="129.0" layoutY="67.0" text="®" textFill="WHITE" />
+            <Label layoutX="20.0" layoutY="99.0" prefHeight="17.0" prefWidth="110.0" text="&quot;Luxury, Simplified&quot;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+            </Label>
+            <Label layoutX="7.0" layoutY="379.0" text="All rights reserved" textFill="WHITE">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="142.0" prefHeight="400.0" prefWidth="461.0" style="-fx-background-color: RGB(250, 249, 246); -fx-background-radius: 20 0 0 20;">
+         <children>
+            <VBox layoutX="76.0" layoutY="56.0" prefHeight="288.0" prefWidth="310.0" style="-fx-background-color: RGB(0, 128, 128); -fx-background-radius: 60; -fx-effect: dropshadow(10,5,5,#696969B3);">
+               <effect>
+                  <DropShadow height="9.38" offsetX="5.0" offsetY="5.0" radius="4.345000000000001" width="10.0">
+                     <color>
+                        <Color red="0.23360000550746918" green="0.7300000190734863" blue="0.5728066563606262" opacity="0.686164379119873" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label text="SIGN UP PAGE" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="63.0" top="16.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Glow level="0.34" />
+                     </effect>
+                  </Label>
+                  <HBox prefHeight="63.0" prefWidth="310.0">
+                     <children>
+                        <Label fx:id="lbl_userName" text="USERNAME" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="17.0" top="31.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tf_userName">
+                           <HBox.margin>
+                              <Insets left="9.0" top="29.0" />
+                           </HBox.margin></TextField>
+                     </children></HBox>
+                  <HBox layoutX="10.0" layoutY="57.0" prefHeight="63.0" prefWidth="310.0">
+                     <children>
+                        <Label fx:id="lbl_password" text="PASSWORD" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="14.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <PasswordField fx:id="pf_password">
+                           <HBox.margin>
+                              <Insets left="9.0" top="11.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="120.0" prefHeight="51.0" prefWidth="310.0">
+                     <children>
+                        <Label fx:id="lbl_email" text="E-MAİL" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tf_email">
+                           <HBox.margin>
+                              <Insets left="7.0" top="-2.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btn_join" mnemonicParsing="false" onAction="#onJoinHandler" style="-fx-background-color: RGB(255,255,255); -fx-background-radius: 20;" text="JOIN NOW!" textFill="TEAL">
+                     <VBox.margin>
+                        <Insets left="121.0" top="-4.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink fx:id="hl_logIn" onAction="#onLogInHandler2" text="Are you registered? Log in" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="9.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="102.0" top="7.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</AnchorPane>
